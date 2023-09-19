@@ -19,7 +19,7 @@ public class ifbedingungen2 {
         // Wenn die erste Zahl kleiner ist als 30 oder die zweite Zahl kleiner ist als 30
         // dann gib aus "Eine der beiden ist kleiner als 30"
         if(randomNumber < 30 || randomNumber2 < 30){
-            System.out.println("Eine der beiden ist kleiner ");
+            System.out.println("Eine der beiden ist kleiner als 30");
         }
     }
 }
