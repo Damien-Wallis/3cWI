@@ -1,4 +1,4 @@
-package ifbedingung;
+package ifbedingung1;
 
 import java.util.Random;
 
