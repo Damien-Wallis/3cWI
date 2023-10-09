@@ -15,7 +15,6 @@ public class While {
             if (randomNumber == 15 || randomNumber == 25) {
                 isFinished = true;
             }
-
         }
         System.out.println(sum);
     }
