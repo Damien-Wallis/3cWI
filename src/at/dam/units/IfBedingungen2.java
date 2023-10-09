@@ -2,7 +2,7 @@ package at.dam.units;
 
 import java.util.Random;
 
-public class ifbedingungen2 {
+public class IfBedingungen2 {
     public static void main(String[] args) {
 
         // Erstelle zwei Zufallszahlen zwischen 0 und 100

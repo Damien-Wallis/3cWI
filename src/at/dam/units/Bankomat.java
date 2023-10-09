@@ -2,7 +2,7 @@ package at.dam.units;
 
 import java.util.Scanner;
 
-public class bankomat {
+public class Bankomat {
     public static void main(String[] args) {
 
         boolean isFinished = false;
