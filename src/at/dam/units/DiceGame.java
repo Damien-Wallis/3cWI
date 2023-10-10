@@ -38,6 +38,19 @@ public class DiceGame {
                 }
             }
 
+            //Ende
+            System.out.println("");
+            if (playerScore > computerScore){
+                System.out.println("Sie haben gewonnen! :)");
+            }
+            else if (playerScore < computerScore){
+                System.out.println("Sie haben verloren! :(");
+            }
+            else {
+                System.out.println("Unentschieden! :|");
+            }
+            diceGameIsFinished = true;
         }
+        scanner.close();
     }
 }
