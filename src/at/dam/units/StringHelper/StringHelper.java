@@ -19,6 +19,14 @@ public class StringHelper {
         }
         return count;
     }
+
+    public static String reverseString(String text) {
+        String reverseString = "";
+        for (int i = text.length() - 1; i >= 0; i--) {
+            reverseString += text.charAt(i);
+        }
+        return reverseString;
+    }
 }
 
 

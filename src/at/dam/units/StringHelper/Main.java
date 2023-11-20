@@ -22,11 +22,10 @@ public class Main {
         int countLetters = StringHelper.countLetters(text, letter);
         System.out.println("Anzahl des Buchstaben " + letter + " im Text: " + countLetters);
 
-        /*
         //reverse String
-        String reverseString = StringHelper.reverseString;
+        String reverseString = StringHelper.reverseString(text);
         System.out.println("Der Text rückwärts geschrieben lautet: " + reverseString);
-
+        /*
         //printAmountOfLetters
         String letterAmount = StringHelper.letterAmount;
         System.out.println("Anzahl der einzelnen Buchstaben im Text: " + letterAmount);
