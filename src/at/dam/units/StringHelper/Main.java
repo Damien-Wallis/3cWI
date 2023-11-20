@@ -8,7 +8,11 @@ public class Main {
         System.out.println("Geben Sie einen beliebigen Text ein: ");
         Scanner textScanner = new Scanner(System.in);
         String text = textScanner.nextLine();
-        char letter = 'c';
+
+        //User Input vom einzelnen Buchstaben
+        System.out.println("Geben Sie einen Buchstaben ein, von dem Sie wissen möchten, wie oft er im Text vorkommt: ");
+        Scanner charScanner = new Scanner(System.in);
+        char letter = charScanner.next().charAt(0);
 
         //isPalindrome
         Boolean isPalindrome = StringHelper.isPalindrome(text);
