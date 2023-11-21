@@ -25,12 +25,9 @@ public class Main {
         //reverse String
         String reverseString = StringHelper.reverseString(text);
         System.out.println("Der Text rückwärts geschrieben lautet: " + reverseString);
-        /*
+
         //printAmountOfLetters
-        String letterAmount = StringHelper.letterAmount;
+        String letterAmount = StringHelper.letterAmount(text);
         System.out.println("Anzahl der einzelnen Buchstaben im Text: " + letterAmount);
-
-         */
-
     }
 }
