@@ -31,3 +31,4 @@ public class Main {
         System.out.println("Anzahl der einzelnen Buchstaben im Text: " + letterAmount);
     }
 }
+
