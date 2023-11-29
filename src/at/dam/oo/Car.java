@@ -10,6 +10,7 @@ public class Car {
     public String serialNumber;
     public String color;
     public int tankVolume;
+    public int amountOfRepititions;
 
     //Methode drive
     public void drive() {
@@ -29,6 +30,13 @@ public class Car {
         }
         else {
             System.out.println("Not enough fuel to go to SuperBoostMode");
+        }
+    }
+
+    //Methode honk
+    public void honk(int amountOfRepitions){
+        for (int i = 0; i < amountOfRepitions; i++) {
+            System.out.println("Tuuut");
         }
     }
 }
