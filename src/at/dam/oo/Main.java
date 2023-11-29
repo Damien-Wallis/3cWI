@@ -8,11 +8,17 @@ public class Main {
         c1.brand = "Porsche";
         c1.fuelConsumption = 9;
         c1.serialNumber = "P911";
+        c1.fuelAmount = 20;
 
         Car c2 = new Car();
         c2.brand = "Honda";
         c2.fuelConsumption = 4;
         c2.serialNumber = "H123";
+        c2.fuelAmount = 70;
+
+        System.out.println(c2.fuelAmount);
+        c2.drive();
+        System.out.println(c2.fuelAmount);
 
         System.out.println(c1.serialNumber);
         System.out.println(c2.brand);
