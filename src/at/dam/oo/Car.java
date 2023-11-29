@@ -16,4 +16,8 @@ public class Car {
         System.out.println("I am driving");
     }
 
+    //Methode brake
+    public void brake(){
+        System.out.println("I am braking");
+    }
 }
