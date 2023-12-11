@@ -11,7 +11,6 @@ public class Main {
         c1.fuelAmount = 10;
         c1.color = "cyan";
         c1.tankVolume = 150;
-        c1.amountOfRepititions = 1;
 
         //Auto 2
         Car c2 = new Car();
@@ -21,7 +20,6 @@ public class Main {
         c2.fuelAmount = 70;
         c2.color = "yellow";
         c2.tankVolume = 80;
-        c2.amountOfRepititions = 3;
 
         //Methode drive
         System.out.println("Current fuel amount is " + c2.fuelAmount);
@@ -39,9 +37,15 @@ public class Main {
 
         //Methode honk
         System.out.print("Car 1: ");
-        c1.honk(c1.amountOfRepititions);
+        c1.honk(3);
         System.out.print("Car 2: ");
-        c2.honk(c2.amountOfRepititions);
+        c2.honk(2);
+
+        //Methode getRemainingRange
+        System.out.print("Car 1: ");
+        c1.getRemainingRange();
+        System.out.print("Car 2: ");
+        c2.getRemainingRange();
 
     }
 }

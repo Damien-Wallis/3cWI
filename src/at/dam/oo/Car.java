@@ -10,7 +10,6 @@ public class Car {
     public String serialNumber;
     public String color;
     public int tankVolume;
-    public int amountOfRepititions;
 
     //Methode drive
     public void drive() {
@@ -38,5 +37,11 @@ public class Car {
         for (int i = 0; i < amountOfRepitions; i++) {
             System.out.println("Tuuut");
         }
+    }
+
+    //Methode getRemainingRange
+    public void getRemainingRange(){
+        double remainingRange = (double) this.fuelAmount / this.fuelConsumption;
+        System.out.println("You can still drive " + remainingRange + "km");
     }
 }
