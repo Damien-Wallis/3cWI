@@ -54,4 +54,55 @@ public class Car {
         double remainingRange = (double) this.fuelAmount / this.fuelConsumption;
         System.out.println("You can still drive " + remainingRange + "km");
     }
+
+    //Setter
+    public void setFuelConsumption(int fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
+    }
+
+    public void setFuelAmount(int fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setTankVolume(int tankVolume) {
+        this.tankVolume = tankVolume;
+    }
+
+    //Getter
+    public int getFuelConsumption() {
+        return fuelConsumption;
+    }
+
+    public int getFuelAmount() {
+        return fuelAmount;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getTankVolume() {
+        return tankVolume;
+    }
 }
+

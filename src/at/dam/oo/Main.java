@@ -22,6 +22,7 @@ public class Main {
                 "yellow",
                 80
         );
+        c2.setFuelAmount(50);
 
         //Methode drive
         System.out.println("Current fuel amount is " + c2.fuelAmount);
