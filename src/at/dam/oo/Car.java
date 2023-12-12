@@ -11,6 +11,16 @@ public class Car {
     public String color;
     public int tankVolume;
 
+    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int tankVolume){
+        this.fuelConsumption = fuelConsumption;
+        this.fuelAmount = fuelAmount;
+        this.brand = brand;
+        this.serialNumber = serialNumber;
+        this.color = color;
+        this.tankVolume = tankVolume;
+
+    }
+
     //Methode drive
     public void drive() {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
