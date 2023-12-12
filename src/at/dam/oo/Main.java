@@ -25,9 +25,9 @@ public class Main {
         c2.setFuelAmount(50);
 
         //Methode drive
-        System.out.println("Current fuel amount is " + c2.fuelAmount);
+        System.out.println("Current fuel amount is " + c2.getFuelAmount());
         c2.drive();
-        System.out.println("Current fuel amount is " + c2.fuelAmount);
+        System.out.println("Current fuel amount is " + c2.getFuelAmount());
 
         //Methode brake
         c1.brake();

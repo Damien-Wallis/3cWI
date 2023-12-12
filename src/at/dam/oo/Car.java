@@ -4,12 +4,12 @@ public class Car {
     //Instanz / Gedächtnisverhalten
 
     //dont do that later
-    public int fuelConsumption;
-    public int fuelAmount;
-    public String brand;
-    public String serialNumber;
-    public String color;
-    public int tankVolume;
+    private int fuelConsumption;
+    private int fuelAmount;
+    private String brand;
+    private String serialNumber;
+    private String color;
+    private int tankVolume;
 
     public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int tankVolume){
         this.fuelConsumption = fuelConsumption;
