@@ -3,8 +3,12 @@ package at.dam.oo;
 public class Main {
     public static void main(String[] args) {
 
-        //Auto 1
+        //Engine 1
+        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+
+        //Car 1
         Car c1 = new Car(
+                e1,
                 9,
                 10,
                 "Porsche",
@@ -13,8 +17,9 @@ public class Main {
                 150
         );
 
-        //Auto 2
+        //Car 2
         Car c2 = new Car(
+                e1,
                 4,
                 70,
                 "Honda",
@@ -49,7 +54,6 @@ public class Main {
         c1.getRemainingRange();
         System.out.print("Car 2: ");
         c2.getRemainingRange();
-
 
     }
 }

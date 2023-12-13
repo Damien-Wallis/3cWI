@@ -4,6 +4,7 @@ public class Car {
     //Instanz / Gedächtnisverhalten
 
     //dont do that later
+    private Engine engine;
     private int fuelConsumption;
     private int fuelAmount;
     private String brand;
@@ -11,7 +12,8 @@ public class Car {
     private String color;
     private int tankVolume;
 
-    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int tankVolume){
+    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int tankVolume) {
+        this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.brand = brand;
@@ -28,29 +30,28 @@ public class Car {
     }
 
     //Methode brake
-    public void brake(){
+    public void brake() {
         System.out.println("I am braking");
     }
 
     //Methode turboBoost
-    public void turboBoost(){
-        if (fuelAmount > this.tankVolume * 0.1){
+    public void turboBoost() {
+        if (fuelAmount > this.tankVolume * 0.1) {
             System.out.println("SuperBoostMode");
-        }
-        else {
+        } else {
             System.out.println("Not enough fuel to go to SuperBoostMode");
         }
     }
 
     //Methode honk
-    public void honk(int amountOfRepitions){
+    public void honk(int amountOfRepitions) {
         for (int i = 0; i < amountOfRepitions; i++) {
             System.out.println("Tuuut");
         }
     }
 
     //Methode getRemainingRange
-    public void getRemainingRange(){
+    public void getRemainingRange() {
         double remainingRange = (double) this.fuelAmount / this.fuelConsumption;
         System.out.println("You can still drive " + remainingRange + "km");
     }
@@ -80,6 +81,10 @@ public class Car {
         this.tankVolume = tankVolume;
     }
 
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
     //Getter
     public int getFuelConsumption() {
         return fuelConsumption;
@@ -103,6 +108,10 @@ public class Car {
 
     public int getTankVolume() {
         return tankVolume;
+    }
+
+    public Engine getEngine() {
+        return engine;
     }
 }
 
