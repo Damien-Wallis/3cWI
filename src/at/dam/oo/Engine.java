@@ -2,6 +2,7 @@ package at.dam.oo;
 
 public class Engine {
     public enum TYPE {DIESEL, PETROL}
+
     private int horsePower;
     private TYPE type;
 
@@ -10,9 +11,7 @@ public class Engine {
         this.type = type;
     }
 
-    public void drive(int amount){
-        System.out.println("the motor is running with " + amount);
-    }
+
 
     public int getHorsePower() {
         return horsePower;
@@ -23,4 +22,4 @@ public class Engine {
     }
 
 
-    }
+}

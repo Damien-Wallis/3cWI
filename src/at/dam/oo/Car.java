@@ -11,7 +11,7 @@ public class Car {
     private String serialNumber;
     private String color;
 
-    public Car(Engine engine, FuelTank fuelTank,int fuelConsumption, String brand, String serialNumber, String color){
+    public Car(Engine engine, FuelTank fuelTank, int fuelConsumption, String brand, String serialNumber, String color) {
         this.engine = engine;
         this.fuelTank = fuelTank;
         this.fuelConsumption = fuelConsumption;
@@ -23,14 +23,12 @@ public class Car {
 
     //Methode drive
     public void drive(int speed) {
-        if(speed > 0 && speed < 101){
+        if (speed > 0 && speed < 101) {
             this.fuelTank.fuelAmount -= this.fuelConsumption;
             System.out.println("I am driving with " + speed + "km/h");
-        }
-        else if(speed > 100){
+        } else if (speed > 100) {
             System.out.println("You are driving too fast D:");
-        }
-        else{
+        } else {
             System.out.println("You are not driving");
         }
 
