@@ -24,9 +24,9 @@ public class Car {
     }
 
     //Methode drive
-    public void drive() {
+    public void drive(int speed) {
         this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving");
+        System.out.println("I am driving with " + speed + "km/h");
     }
 
     //Methode brake
