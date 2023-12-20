@@ -25,8 +25,17 @@ public class Car {
 
     //Methode drive
     public void drive(int speed) {
-        this.fuelAmount = this.fuelAmount - this.fuelConsumption;
-        System.out.println("I am driving with " + speed + "km/h");
+        if(speed > 0 && speed < 101){
+            this.fuelAmount = this.fuelAmount - this.fuelConsumption;
+            System.out.println("I am driving with " + speed + "km/h");
+        }
+        else if(speed > 100){
+            System.out.println("You are driving too fast D:");
+        }
+        else{
+            System.out.println("You are not driving");
+        }
+
     }
 
     //Methode brake
