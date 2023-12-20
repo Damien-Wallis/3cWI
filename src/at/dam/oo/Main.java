@@ -4,35 +4,36 @@ public class Main {
     public static void main(String[] args) {
 
         //Engine 1
-        Engine e1 = new Engine(140, Engine.TYPE.DIESEL);
+        Engine engine1 = new Engine(140, Engine.TYPE.DIESEL);
+
+        //Tanks
+        FuelTank tank1 = new FuelTank(10, 150);
+        FuelTank tank2 = new FuelTank(70, 80);
 
         //Car 1
         Car c1 = new Car(
-                e1,
+                engine1,
+                tank1,
                 9,
-                10,
                 "Porsche",
                 "P911",
-                "cyan",
-                150
+                "cyan"
         );
 
         //Car 2
         Car c2 = new Car(
-                e1,
-                4,
+                engine1,
+                tank2,
                 70,
                 "Honda",
                 "H123",
-                "yellow",
-                80
+                "yellow"
         );
-        c2.setFuelAmount(50);
 
         //Methode drive
-        System.out.println("Current fuel amount is " + c2.getFuelAmount());
+        System.out.println("Current fuel amount is " + c2.getFuelTank().getFuelAmount());
         c2.drive(200);
-        System.out.println("Current fuel amount is " + c2.getFuelAmount());
+        System.out.println("Current fuel amount is " + c2.getFuelTank().getFuelAmount());
 
         //Methode brake
         c1.brake();

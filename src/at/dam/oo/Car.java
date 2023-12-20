@@ -5,28 +5,26 @@ public class Car {
 
     //dont do that later
     private Engine engine;
+    private FuelTank fuelTank;
     private int fuelConsumption;
-    private int fuelAmount;
     private String brand;
     private String serialNumber;
     private String color;
-    private int tankVolume;
 
-    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, String color, int tankVolume) {
+    public Car(Engine engine, FuelTank fuelTank,int fuelConsumption, String brand, String serialNumber, String color){
         this.engine = engine;
+        this.fuelTank = fuelTank;
         this.fuelConsumption = fuelConsumption;
-        this.fuelAmount = fuelAmount;
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.color = color;
-        this.tankVolume = tankVolume;
 
     }
 
     //Methode drive
     public void drive(int speed) {
         if(speed > 0 && speed < 101){
-            this.fuelAmount = this.fuelAmount - this.fuelConsumption;
+            this.fuelTank.fuelAmount -= this.fuelConsumption;
             System.out.println("I am driving with " + speed + "km/h");
         }
         else if(speed > 100){
@@ -45,7 +43,7 @@ public class Car {
 
     //Methode turboBoost
     public void turboBoost() {
-        if (fuelAmount > this.tankVolume * 0.1) {
+        if (this.fuelTank.fuelAmount > this.fuelTank.fuelAmount * 0.1) {
             System.out.println("SuperBoostMode");
         } else {
             System.out.println("Not enough fuel to go to SuperBoostMode");
@@ -61,17 +59,13 @@ public class Car {
 
     //Methode getRemainingRange
     public void getRemainingRange() {
-        double remainingRange = (double) this.fuelAmount / this.fuelConsumption;
+        double remainingRange = (double) this.fuelTank.fuelAmount / this.fuelConsumption;
         System.out.println("You can still drive " + remainingRange + "km");
     }
 
     //Setter
     public void setFuelConsumption(int fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
-    }
-
-    public void setFuelAmount(int fuelAmount) {
-        this.fuelAmount = fuelAmount;
     }
 
     public void setBrand(String brand) {
@@ -86,10 +80,6 @@ public class Car {
         this.color = color;
     }
 
-    public void setTankVolume(int tankVolume) {
-        this.tankVolume = tankVolume;
-    }
-
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
@@ -97,10 +87,6 @@ public class Car {
     //Getter
     public int getFuelConsumption() {
         return fuelConsumption;
-    }
-
-    public int getFuelAmount() {
-        return fuelAmount;
     }
 
     public String getBrand() {
@@ -115,12 +101,12 @@ public class Car {
         return color;
     }
 
-    public int getTankVolume() {
-        return tankVolume;
-    }
-
     public Engine getEngine() {
         return engine;
+    }
+
+    public FuelTank getFuelTank() {
+        return fuelTank;
     }
 }
 
