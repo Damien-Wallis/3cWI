@@ -3,12 +3,15 @@ package at.dam.oo;
 public class Main {
     public static void main(String[] args) {
 
-        //Engine 1
-        Engine engine1 = new Engine(140, Engine.TYPE.DIESEL);
 
         //Tanks
-        FuelTank tank1 = new FuelTank(10, 150);
+        FuelTank tank1 = new FuelTank(100, 150);
         FuelTank tank2 = new FuelTank(70, 80);
+
+        //Engine 1
+        Engine engine1 = new Engine(140, Engine.TYPE.DIESEL, tank1);
+
+
 
         //Car 1
         Car c1 = new Car(
