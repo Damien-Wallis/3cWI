@@ -3,7 +3,9 @@ package at.dam.oo;
 public class Engine {
     private FuelTank fuelTank;
     private int fuelConsumption;
+
     public enum TYPE {DIESEL, PETROL}
+
     private int horsePower;
     private TYPE type;
 

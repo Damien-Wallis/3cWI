@@ -1,5 +1,8 @@
 package at.dam.oo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     //Instanz / Gedächtnisverhalten
 
@@ -10,6 +13,7 @@ public class Car {
     private String brand;
     private String serialNumber;
     private String color;
+    private List<RearMirror> mirrors;
 
     public Car(Engine engine, FuelTank fuelTank, int fuelConsumption, String brand, String serialNumber, String color) {
         this.engine = engine;
@@ -18,11 +22,12 @@ public class Car {
         this.brand = brand;
         this.serialNumber = serialNumber;
         this.color = color;
+        this.mirrors = new ArrayList<>();
 
     }
 
     //Methode drive
-    public void drive(int speed){
+    public void drive(int speed) {
         this.engine.drive(speed);
     }
 
@@ -32,7 +37,7 @@ public class Car {
     }
 
     //Methode turboBoost
-    public void turboBoost(){
+    public void turboBoost() {
         this.engine.turboBoost();
     }
 
@@ -47,6 +52,11 @@ public class Car {
     public void getRemainingRange() {
         double remainingRange = (double) this.fuelTank.fuelAmount / this.fuelConsumption;
         System.out.println("You can still drive " + remainingRange + "km");
+    }
+
+    //Methode addMirror
+    public void addMirror(RearMirror rearMirror){
+        this.mirrors.add(rearMirror);
     }
 
     //Setter
@@ -93,6 +103,10 @@ public class Car {
 
     public FuelTank getFuelTank() {
         return fuelTank;
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
     }
 }
 
