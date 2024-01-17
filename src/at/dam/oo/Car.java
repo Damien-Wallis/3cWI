@@ -111,10 +111,12 @@ public class Car {
         return fuelTank;
     }
 
-
-
     public List<RearMirror> getMirrors() {
         return mirrors;
+    }
+
+    public List<Tyre> getTyres() {
+        return tyres;
     }
 }
 

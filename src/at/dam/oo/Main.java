@@ -81,8 +81,16 @@ public class Main {
         System.out.print("Car 2: ");
         c2.getRemainingRange();
 
+        System.out.print("Car 1: MirrorPosition: ");
         System.out.println(c1.getMirrors().get(0).getPosition());
+
+        System.out.print("Car 2: MirrorPosition: ");
         System.out.println(c2.getMirrors().get(1).getPosition());
 
+        System.out.print("Car 1: TyreType: ");
+        System.out.println(c1.getTyres().get(0).getType());
+
+        System.out.print("Car 2: TyreType: ");
+        System.out.println(c2.getTyres().get(1).getType());
     }
 }
