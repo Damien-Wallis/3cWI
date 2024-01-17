@@ -12,8 +12,10 @@ public class Main {
         Engine engine1 = new Engine(140, Engine.TYPE.DIESEL, tank1);
 
         //RearMirrors
-        RearMirror mirror1 = new RearMirror(100, 0);
-        RearMirror mirror2 = new RearMirror(80, -42);
+        RearMirror c1mirror1 = new RearMirror(100, 40);
+        RearMirror c1mirror2 = new RearMirror(100, -40);
+        RearMirror c2mirror1 = new RearMirror(80, 16);
+        RearMirror c2mirror2 = new RearMirror(80, -16);
 
         Car c1 = new Car(
                 engine1,
@@ -23,8 +25,8 @@ public class Main {
                 "P911",
                 "cyan"
         );
-        c1.addMirror(mirror1);
-        c1.addMirror(mirror1);
+        c1.addMirror(c1mirror1);
+        c1.addMirror(c1mirror2);
 
         //Car 2
         Car c2 = new Car(
@@ -35,8 +37,8 @@ public class Main {
                 "H123",
                 "yellow"
         );
-        c2.addMirror(mirror2);
-        c2.addMirror(mirror2);
+        c2.addMirror(c2mirror1);
+        c2.addMirror(c2mirror2);
 
         //Methode drive
         System.out.println("Current fuel amount is " + c2.getFuelTank().getFuelAmount());
