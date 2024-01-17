@@ -56,12 +56,12 @@ public class Car {
     }
 
     //Methode addMirror
-    public void addMirror(RearMirror rearMirror){
+    public void addMirror(RearMirror rearMirror) {
         this.mirrors.add(rearMirror);
     }
 
     //Methode addTyre
-    public void addTyre(Tyre tyre){
+    public void addTyre(Tyre tyre) {
         this.tyres.add(tyre);
     }
 
