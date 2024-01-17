@@ -8,7 +8,7 @@ public class Main {
         FuelTank tank1 = new FuelTank(100, 150);
         FuelTank tank2 = new FuelTank(70, 80);
 
-        //Engine 1
+        //Engine
         Engine engine1 = new Engine(140, Engine.TYPE.DIESEL, tank1);
 
         //RearMirrors
@@ -16,6 +16,10 @@ public class Main {
         RearMirror c1mirror2 = new RearMirror(100, -40);
         RearMirror c2mirror1 = new RearMirror(80, 16);
         RearMirror c2mirror2 = new RearMirror(80, -16);
+
+        //Tyres
+        Tyre c1tyres = new Tyre(205, Tyre.TYRETYPE.SUMMER);
+        Tyre c2tyres = new Tyre(185, Tyre.TYRETYPE.ALLSEASON);
 
         Car c1 = new Car(
                 engine1,
@@ -28,6 +32,11 @@ public class Main {
         c1.addMirror(c1mirror1);
         c1.addMirror(c1mirror2);
 
+        c1.addTyre(c1tyres);
+        c1.addTyre(c1tyres);
+        c1.addTyre(c1tyres);
+        c1.addTyre(c1tyres);
+
         //Car 2
         Car c2 = new Car(
                 engine1,
@@ -39,6 +48,12 @@ public class Main {
         );
         c2.addMirror(c2mirror1);
         c2.addMirror(c2mirror2);
+
+        c2.addTyre(c2tyres);
+        c2.addTyre(c2tyres);
+        c2.addTyre(c2tyres);
+        c2.addTyre(c2tyres);
+
 
         //Methode drive
         System.out.println("Current fuel amount is " + c2.getFuelTank().getFuelAmount());

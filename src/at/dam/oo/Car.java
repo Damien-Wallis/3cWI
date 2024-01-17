@@ -14,6 +14,7 @@ public class Car {
     private String serialNumber;
     private String color;
     private List<RearMirror> mirrors;
+    private List<Tyre> tyres;
 
     public Car(Engine engine, FuelTank fuelTank, int fuelConsumption, String brand, String serialNumber, String color) {
         this.engine = engine;
@@ -23,7 +24,7 @@ public class Car {
         this.serialNumber = serialNumber;
         this.color = color;
         this.mirrors = new ArrayList<>();
-
+        this.tyres = new ArrayList<>();
     }
 
     //Methode drive
@@ -57,6 +58,11 @@ public class Car {
     //Methode addMirror
     public void addMirror(RearMirror rearMirror){
         this.mirrors.add(rearMirror);
+    }
+
+    //Methode addTyre
+    public void addTyre(Tyre tyre){
+        this.tyres.add(tyre);
     }
 
     //Setter
@@ -104,6 +110,8 @@ public class Car {
     public FuelTank getFuelTank() {
         return fuelTank;
     }
+
+
 
     public List<RearMirror> getMirrors() {
         return mirrors;
