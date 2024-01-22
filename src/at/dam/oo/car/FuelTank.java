@@ -1,4 +1,4 @@
-package at.dam.oo;
+package at.dam.oo.car;
 
 public class FuelTank {
     public int fuelAmount;

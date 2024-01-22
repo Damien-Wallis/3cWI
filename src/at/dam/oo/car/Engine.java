@@ -1,4 +1,4 @@
-package at.dam.oo;
+package at.dam.oo.car;
 
 public class Engine {
     private FuelTank fuelTank;
