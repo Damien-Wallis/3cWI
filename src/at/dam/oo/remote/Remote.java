@@ -16,8 +16,31 @@ public class Remote {
 
     //Methode getStatus
     public void getStatus() {
-        int average = (batteries.get(0).getChargingStatus() + batteries.get(1).getChargingStatus()) / 2;
-        System.out.println(average);
+        if (hasPower){
+            int average = (batteries.get(0).getChargingStatus() + batteries.get(1).getChargingStatus()) / 2;
+            System.out.println(average);
+        }
+    }
+
+    public void turnOn() {
+        isOn = true;
+        int chargingStatus1 = batteries.get(0).getChargingStatus();
+        chargingStatus1 = chargingStatus1 - 5;
+        this.batteries.get(0).setChargingStatus(chargingStatus1);
+
+        int chargingStatus2 = batteries.get(1).getChargingStatus();
+        chargingStatus2 = chargingStatus2 - 5;
+        this.batteries.get(1).setChargingStatus(chargingStatus2);
+
+        if (chargingStatus1 < 5 || chargingStatus2 < 5){
+            isOn = false;
+            hasPower = false;
+            System.out.println("At least one battery is discharged");
+        }
+        else{
+            System.out.println("battery 1: Verbraucher angeschlossen");
+            System.out.println("battery 2: Verbraucher angeschlossen");
+        }
     }
 
     //Methode addBattery

@@ -11,5 +11,7 @@ public class Main {
         remote.addBattery(battery2);
 
         remote.getStatus();
+        remote.turnOn();
+        remote.getStatus();
     }
 }
