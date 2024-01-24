@@ -14,6 +14,11 @@ public class Remote {
         this.batteries = new ArrayList<>();
     }
 
+    //Methode getStatus
+    public void getStatus() {
+        System.out.println(this.batteries.get(0).getChargingStatus());
+    }
+
     //Methode addBattery
     public void addBattery(Battery battery) {
         this.batteries.add(battery);
