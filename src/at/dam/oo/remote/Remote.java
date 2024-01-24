@@ -16,11 +16,17 @@ public class Remote {
 
     //Methode getStatus
     public void getStatus() {
-        System.out.println(this.batteries.get(0).getChargingStatus());
+        int average = (batteries.get(0).getChargingStatus() + batteries.get(1).getChargingStatus()) / 2;
+        System.out.println(average);
     }
 
     //Methode addBattery
     public void addBattery(Battery battery) {
         this.batteries.add(battery);
+    }
+
+    //Getter
+    public List<Battery> getBatteries() {
+        return batteries;
     }
 }
