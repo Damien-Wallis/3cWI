@@ -6,9 +6,10 @@ public class Car {
     private int basePrice;
     private int baseConsumption;
     private String manufacturer;
-    private String engine;
+    private Engine engine;
 
-    public Car(String color, int topSpeed, int basePrice, int baseConsumption, String manufacturer, String engine) {
+
+    public Car(String color, int topSpeed, int basePrice, int baseConsumption, String manufacturer, Engine engine) {
         this.color = color;
         this.topSpeed = topSpeed;
         this.basePrice = basePrice;
