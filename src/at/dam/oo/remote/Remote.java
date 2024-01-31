@@ -16,7 +16,7 @@ public class Remote {
 
     //Methode getStatus
     public void getStatus() {
-        if (hasPower){
+        if (hasPower) {
             int average = (batteries.get(0).getChargingStatus() + batteries.get(1).getChargingStatus()) / 2;
             System.out.println("Batteriestatus der Batterien: " + average);
         }
@@ -32,12 +32,11 @@ public class Remote {
         chargingStatus2 = chargingStatus2 - 5;
         this.batteries.get(1).setChargingStatus(chargingStatus2);
 
-        if (chargingStatus1 < 5 || chargingStatus2 < 5){
+        if (chargingStatus1 < 5 || chargingStatus2 < 5) {
             isOn = false;
             hasPower = false;
             System.out.println("At least one battery is discharged");
-        }
-        else{
+        } else {
             System.out.println("battery 1: Verbraucher angeschlossen");
             System.out.println("battery 2: Verbraucher angeschlossen");
         }
