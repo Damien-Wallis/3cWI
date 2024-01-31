@@ -18,7 +18,7 @@ public class Remote {
     public void getStatus() {
         if (hasPower){
             int average = (batteries.get(0).getChargingStatus() + batteries.get(1).getChargingStatus()) / 2;
-            System.out.println(average);
+            System.out.println("Batteriestatus der Batterien: " + average);
         }
     }
 
@@ -41,6 +41,12 @@ public class Remote {
             System.out.println("battery 1: Verbraucher angeschlossen");
             System.out.println("battery 2: Verbraucher angeschlossen");
         }
+    }
+
+    public void turnOff() {
+        isOn = false;
+        System.out.println("battery 1: Kein Verbraucher angeschlossen");
+        System.out.println("battery 2: Kein Verbraucher angeschlossen");
     }
 
     //Methode addBattery

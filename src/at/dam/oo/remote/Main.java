@@ -13,5 +13,7 @@ public class Main {
         remote.getStatus();
         remote.turnOn();
         remote.getStatus();
+        remote.turnOff();
+        remote.getStatus();
     }
 }
