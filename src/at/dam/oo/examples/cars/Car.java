@@ -3,7 +3,7 @@ package at.dam.oo.examples.cars;
 public class Car {
     private String color;
     private int topSpeed;
-    private int basePrice;
+    private double basePrice;
     private int baseConsumption;
     private String manufacturer;
     private Engine engine;
