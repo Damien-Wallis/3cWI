@@ -28,8 +28,7 @@ public class Car {
         double fuelConsumption = 0;
         if (mileage <= 50000) {
             fuelConsumption = this.baseConsumption;
-        }
-        else {
+        } else {
             fuelConsumption = this.baseConsumption * 1.098;
         }
         System.out.println("current fuel consumption: " + fuelConsumption);

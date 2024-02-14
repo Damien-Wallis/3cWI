@@ -2,7 +2,10 @@ package at.dam.oo.examples.cars;
 
 public class Engine {
     private int horsePower;
-    public enum type {Diesel, Petrol};
+
+    public enum type {Diesel, Petrol}
+
+    ;
     private type type;
 
     public Engine(int horsePower, Engine.type type) {
