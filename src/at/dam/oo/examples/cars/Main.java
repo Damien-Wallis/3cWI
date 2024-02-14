@@ -14,9 +14,10 @@ public class Main {
                 5,
                 m1,
                 e1,
-                25000
+                70000
         );
         c1.getBasePrice();
         c1.getNewPrice();
+        c1.getFuelConsumption();
     }
 }

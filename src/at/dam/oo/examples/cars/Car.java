@@ -24,6 +24,17 @@ public class Car {
         System.out.println("new price: " + newPrice + "€");
     }
 
+    public void getFuelConsumption() {
+        double fuelConsumption = 0;
+        if (mileage <= 50000) {
+            fuelConsumption = this.baseConsumption;
+        }
+        else {
+            fuelConsumption = this.baseConsumption * 1.098;
+        }
+        System.out.println("current fuel consumption: " + fuelConsumption);
+    }
+
     public String getColor() {
         return color;
     }
