@@ -17,4 +17,12 @@ public class Engine {
     public void setType(Engine.type type) {
         this.type = type;
     }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public Engine.type getType() {
+        return type;
+    }
 }

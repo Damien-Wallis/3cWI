@@ -8,7 +8,7 @@ public class Manufacturer {
     public Manufacturer(String name, String country, double discount) {
         this.name = name;
         this.country = country;
-        this.discount = discount;
+        this.discount = 1 - discount;
     }
 
     public void setName(String name) {
@@ -21,5 +21,17 @@ public class Manufacturer {
 
     public void setDiscount(double discount) {
         this.discount = discount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public double getDiscount() {
+        return discount;
     }
 }
