@@ -1,5 +1,7 @@
 package at.dam.oo.examples.lamp;
 
+import at.dam.oo.remote.Battery;
+
 import java.util.List;
 
 public class Lamp {
@@ -9,6 +11,11 @@ public class Lamp {
     public Lamp(String name, List<GlowElement> glowElements) {
         this.name = name;
         this.glowElements = glowElements;
+    }
+
+    //Methode addGlowElements
+    public void addGlowElements(GlowElement glowElement) {
+        this.glowElements.add(glowElement);
     }
 
     public String getName() {
