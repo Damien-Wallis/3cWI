@@ -19,10 +19,21 @@ public class Lamp {
         this.glowElements.add(glowElement);
     }
 
+    //Methode turnAllOn
     public void turnAllOn() {
         for (GlowElement glowElement : this.glowElements) {
             glowElement.turnOn();
         }
+    }
+
+    //Methode getOverallPowerUsage
+    public double getOverallPowerUsage() {
+        double powerUsage = 0;
+        for (GlowElement glowElement : this.glowElements) {
+            powerUsage += glowElement.getPowerConsumption();
+        }
+        System.out.println(powerUsage);
+        return powerUsage;
     }
 
     public String getName() {
