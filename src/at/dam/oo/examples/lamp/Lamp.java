@@ -8,9 +8,8 @@ public class Lamp {
     private String name;
     private List<GlowElement> glowElements;
 
-    public Lamp(String name, List<GlowElement> glowElements) {
+    public Lamp(String name) {
         this.name = name;
-        this.glowElements = glowElements;
     }
 
     //Methode addGlowElements
