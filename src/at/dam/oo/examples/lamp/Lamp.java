@@ -19,6 +19,12 @@ public class Lamp {
         this.glowElements.add(glowElement);
     }
 
+    public void turnAllOn() {
+        for (GlowElement glowElement : this.glowElements) {
+            glowElement.turnOn();
+        }
+    }
+
     public String getName() {
         return name;
     }

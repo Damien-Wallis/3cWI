@@ -11,6 +11,10 @@ public class GlowElement {
         this.isOn = isOn;
     }
 
+    public void turnOn() {
+        this.isOn = true;
+    }
+
     public String getColor() {
         return color;
     }
@@ -29,9 +33,5 @@ public class GlowElement {
 
     public boolean isOn() {
         return isOn;
-    }
-
-    public void turnOn() {
-        this.isOn = true;
     }
 }
