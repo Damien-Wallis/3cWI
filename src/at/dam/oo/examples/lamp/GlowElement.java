@@ -4,14 +4,20 @@ public class GlowElement {
     private String color;
     private int powerConsumption;
     private boolean isOn;
+    private String name;
 
-    public GlowElement(String color, int powerConsumption, boolean isOn) {
+    public GlowElement(String color, int powerConsumption, boolean isOn, String name) {
         this.color = color;
         this.powerConsumption = powerConsumption;
         this.isOn = isOn;
+        this.name = name;
     }
 
     public void turnOn() {
+        if (isOn) {
+            System.out.println("Mein Name ist " + name + ". Ich bin bereits eingeschaltet.");
+            this.powerConsumption += 5;
+        }
         this.isOn = true;
     }
 
