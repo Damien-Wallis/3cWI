@@ -31,7 +31,7 @@ public class GlowElement {
         return isOn;
     }
 
-    public void setOn(boolean on) {
-        isOn = on;
+    public void turnOn() {
+        this.isOn = true;
     }
 }

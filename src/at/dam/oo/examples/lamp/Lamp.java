@@ -2,6 +2,7 @@ package at.dam.oo.examples.lamp;
 
 import at.dam.oo.remote.Battery;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lamp {
@@ -10,6 +11,7 @@ public class Lamp {
 
     public Lamp(String name) {
         this.name = name;
+        this.glowElements = new ArrayList<>();
     }
 
     //Methode addGlowElements
