@@ -37,7 +37,7 @@ public class Lamp {
     }
 
     public void printNamesOfLightElements() {
-        for (GlowElement glowElement: glowElements) {
+        for (GlowElement glowElement : glowElements) {
             System.out.println(glowElement.getName());
         }
     }
