@@ -32,8 +32,14 @@ public class Lamp {
         for (GlowElement glowElement : this.glowElements) {
             powerUsage += glowElement.getPowerConsumption();
         }
-        System.out.println(powerUsage);
+        System.out.println("Overall Power Usage: " + powerUsage);
         return powerUsage;
+    }
+
+    public void printNamesOfLightElements() {
+        for (GlowElement glowElement: glowElements) {
+            System.out.println(glowElement.getName());
+        }
     }
 
     public String getName() {

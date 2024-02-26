@@ -13,5 +13,6 @@ public class Main {
         System.out.println(glowElement1.isOn());
         System.out.println(glowElement2.isOn());
         lamp.getOverallPowerUsage();
+        lamp.printNamesOfLightElements();
     }
 }

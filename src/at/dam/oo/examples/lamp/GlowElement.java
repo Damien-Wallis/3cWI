@@ -40,4 +40,12 @@ public class GlowElement {
     public boolean isOn() {
         return isOn;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
