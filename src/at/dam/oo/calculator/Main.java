@@ -22,6 +22,6 @@ public class Main {
         System.out.println(scienceCalculator.sinus(360));
         System.out.println(scienceCalculator.cosinus(360));
         System.out.println(scienceCalculator.sqrrt(9));
-        System.out.println(scienceCalculator.add(5,9));
+        System.out.println(scienceCalculator.add(5, 9));
     }
 }
