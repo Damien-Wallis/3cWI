@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SDCard {
-    private PhoneFile file;
     private int capacity;
     private List<PhoneFile> files;
 
-    public SDCard(PhoneFile file, int capacity) {
-        this.file = file;
+    public SDCard(int capacity) {
         this.capacity = capacity;
         this.files = new ArrayList<>();
     }
@@ -17,5 +15,12 @@ public class SDCard {
     //Methode saveFile
     public void saveFile(PhoneFile file) {
         this.files.add(file);
+    }
+
+    //Methode getAllFiles
+    public void getAllFiles() {
+        for (PhoneFile file: files){
+            System.out.println(file.getInfo(file));
+        }
     }
 }
