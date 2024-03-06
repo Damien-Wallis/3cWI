@@ -9,6 +9,7 @@ public class PhoneFile {
         this.extension = "." + extension;
         this.size = size;
         this.name = name;
+
     }
     public void getInfo(){
         System.out.println(name + extension + ": " + size + "MB");
