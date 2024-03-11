@@ -23,4 +23,14 @@ public class SDCard {
             System.out.println(file.getInfo(file));
         }
     }
+
+    //Methode getFreeSpace
+    public int getFreeSpace(){
+        int sum = 0;
+        for (PhoneFile file: files){
+            sum += file.getSize();
+        }
+        System.out.print("remaining space in MB: ");
+        return this.capacity - sum;
+    }
 }

@@ -14,4 +14,20 @@ public class PhoneFile {
     public String getInfo(PhoneFile file){
         return name + extension + ": " + size + "MB";
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getExtension() {
+        return extension;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

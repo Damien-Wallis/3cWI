@@ -10,5 +10,6 @@ public class Main {
         System.out.println(file.getInfo(file));
         card.saveFile(file);
         card.getAllFiles();
+        System.out.println(card.getFreeSpace());
     }
 }
