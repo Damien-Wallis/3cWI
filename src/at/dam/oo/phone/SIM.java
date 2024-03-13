@@ -8,4 +8,8 @@ public class SIM {
         this.id = id;
         this.number = number;
     }
+
+    public void makeCall(String number) {
+        System.out.println("Calling " + number + "...");
+    }
 }
