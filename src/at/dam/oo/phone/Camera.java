@@ -9,8 +9,8 @@ public class Camera {
         this.sdCard = sdCard;
     }
 
-    public void takePicture(String extension, String name) {
+    public PhoneFile takePicture(String extension, String name) {
         PhoneFile file2 = new PhoneFile(extension, resolution * resolution, name);
-        sdCard.saveFile(file2);
+        return file2;
     }
 }

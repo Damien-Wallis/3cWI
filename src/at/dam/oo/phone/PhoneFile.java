@@ -11,7 +11,8 @@ public class PhoneFile {
         this.name = name;
 
     }
-    public String getInfo(PhoneFile file){
+
+    public String getInfo(PhoneFile file) {
         return name + extension + ": " + size + "MB";
     }
 

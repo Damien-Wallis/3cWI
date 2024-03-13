@@ -7,14 +7,14 @@ public class Main {
         SDCard sd = new SDCard(30);
         Camera camera = new Camera(20, sd);
         SIM sim = new SIM(815, "+43 676 324 1734");
+        Phone phone = new Phone("yellow", sim, camera, sd);
 
         //Befehle
         System.out.println(file.getInfo(file));
         sd.saveFile(file);
-        camera.takePicture("png", "drache");
         sd.getAllFiles();
         System.out.println(sd.getFreeSpace());
-
         sim.makeCall("32168");
+        phone.printAllFiles();
     }
 }

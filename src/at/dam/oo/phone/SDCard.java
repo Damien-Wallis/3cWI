@@ -19,15 +19,15 @@ public class SDCard {
 
     //Methode getAllFiles
     public void getAllFiles() {
-        for (PhoneFile file: files){
+        for (PhoneFile file : files) {
             System.out.println(file.getInfo(file));
         }
     }
 
     //Methode getFreeSpace
-    public int getFreeSpace(){
+    public int getFreeSpace() {
         int sum = 0;
-        for (PhoneFile file: files){
+        for (PhoneFile file : files) {
             sum += file.getSize();
         }
         System.out.print("remaining space in MB: ");
