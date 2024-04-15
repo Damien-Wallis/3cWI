@@ -6,6 +6,6 @@ public class Main {
         Passenger p1 = new Passenger("Damien", "Wallis");
 
         //Befehle
-        p1.inform();
+        p1.inform("Your food will be brought to you in 5 min.");
     }
 }

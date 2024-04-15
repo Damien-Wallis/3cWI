@@ -10,8 +10,10 @@ public class Passenger {
     }
 
     //Methode inform
-    public void inform() {
-        System.out.println(this.firstname + " " + this.lastname);
+    public String inform(String message) {
+        System.out.print(this.firstname + " " + this.lastname + ": ");
+        System.out.println(message);
+        return message;
     }
 
     public String getFirstname() {
