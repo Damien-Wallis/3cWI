@@ -21,4 +21,12 @@ public class TrafficController {
             System.out.println(plane.getName());
         }
     }
+
+    //Methode informPeopleOnAllPlanes
+    public String informPeopleOnAllPlanes(String message){
+        for (Plane plane:planes) {
+            plane.informPassengers(message);
+        }
+        return message;
+    }
 }
