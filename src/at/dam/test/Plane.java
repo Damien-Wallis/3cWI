@@ -22,8 +22,8 @@ public class Plane {
     }
 
     //Methode informPassengers
-    public String informPassengers(String message){
-        for (Passenger passenger:this.passengers) {
+    public String informPassengers(String message) {
+        for (Passenger passenger : this.passengers) {
             passenger.inform(message);
         }
         return message;

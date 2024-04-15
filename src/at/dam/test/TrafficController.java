@@ -23,8 +23,8 @@ public class TrafficController {
     }
 
     //Methode informPeopleOnAllPlanes
-    public String informPeopleOnAllPlanes(String message){
-        for (Plane plane:planes) {
+    public String informPeopleOnAllPlanes(String message) {
+        for (Plane plane : planes) {
             plane.informPassengers(message);
         }
         return message;
